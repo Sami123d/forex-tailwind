@@ -41,11 +41,15 @@ const Navbar = () => {
     <div className="text-white h-24 max-w-[1240px] mx-auto px-4 flex justify-between items-center bg-black">
       <div className="text-3xl font-bold uppercase text-[#00df9a]">forex.</div>
       <ul className="md:flex hidden">
+        <li className="p-4 hover:text-[#00df9a]">Home</li>
         <li className="p-4 hover:text-[#00df9a]">Company</li>
-        <li className="p-4 hover:text-[#00df9a]">Resource</li>
+        <li className="p-4 hover:text-[#00df9a]">Resources</li>
         <li className="p-4 hover:text-[#00df9a]">About</li>
         <li className="p-4 hover:text-[#00df9a]">Contact</li>
-        <li className="p-4 hover:text-[#00df9a]">Home</li>
+
+
+
+
       </ul>
       <div className="block md:hidden cursor-pointer" onClick={toggleSidebar}>
         {nav ? <IoMdClose size={22} /> : <RiMenu3Fill size={20} />}
@@ -57,12 +61,13 @@ const Navbar = () => {
         }`}
       >
         <div className="text-3xl mt-4 p-4 font-bold uppercase text-[#00df9a]">forex.</div>
-        <ul className="uppercase ml-4 pt-7">
+        <ul className="uppercase ml-4 mb-2 pt-7">
           <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Home</li>
           <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Company</li>
-          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Contact</li>
-          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Resource</li>
-          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">About</li>
+          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Resources</li>
+          <li className="p-4 border-b  border-gray-600 hover:text-[#00df9a]">About</li>
+          <li className="p-4  border-gray-600 hover:text-[#00df9a]">Contact</li>
+
         </ul>
       </div>
       <div className={`fixed inset-0 transition-opacity duration-300 ${nav ? "bg-black opacity-50" : "opacity-0 pointer-events-none"}`} onClick={() => setNav(false)} />
