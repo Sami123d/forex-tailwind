@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const sidebarRef = useRef(null);
