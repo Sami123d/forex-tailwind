@@ -8,3 +8,8 @@ background-color:#000300;
 .hero-sec{
     height: calc(100vh - 86px);
 }
+.sidebar {
+    max-height: 100vh; /* Adjust as necessary */
+    overflow-y: auto; /* Allows the sidebar content to scroll if necessary */
+  }
+  
