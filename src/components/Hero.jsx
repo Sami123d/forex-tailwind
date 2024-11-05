@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -25,9 +26,7 @@ const Hero = () => {
           Mointor your data analytics to increase revenue for BTB, BTC, & Saas
           platforms.
         </p>
-        <button class="bg-[#00d59a] text-[#000300] my-1 hover:bg-[#02ab7b] text-sm py-2 px-7 rounded">
-          Get Started
-        </button>
+        <Button text={'Get Started'}/>
       </div>
     </div>
   );

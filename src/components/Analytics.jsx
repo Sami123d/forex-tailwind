@@ -1,5 +1,7 @@
 import React from "react";
 import laptop from "../assets/laptop.jpg";
+import Button from "./Button";
+
 const Analytics = () => {
   return (
     <div className="w-full py-1 px-4 bg-white">
@@ -18,9 +20,7 @@ const Analytics = () => {
             saepe, error nemo dicta, ratione accusamus cum, quam natus.
           </p>
           <div className="flex sm:justify-start justify-center">
-            <button class="text-[#00d59a]  bg-[#000300] my-4 hover:bg-[#0e2c0e] text-sm py-2 px-7 rounded">
-          Get Started
-        </button>
+            <Button isSpecial={true} text={'Get Started'}/>
           </div>
           
         </div>

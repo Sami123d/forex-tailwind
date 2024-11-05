@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Newsletter = () => {
   return (
@@ -17,15 +18,13 @@ const Newsletter = () => {
               className="p-2 rounded w-full "
               placeholder="enter email "
             />
-            <button class="bg-[#00d59a] text-[#000300] font-medium hover:bg-[#02ab7b] text-md w-[200px] py-2 m-4 px-6 rounded">
-              Notify me
-            </button>
+          <Button text={'Notify Me'}/>
           </div>
-          <p className="">We care abput the protection of your data. Read our <span className="text-[#00d59a] underline">Privacy Policy</span></p>
+          <p className="">We care about the protection of your data. Read our <span className="text-[#00d59a] underline">Privacy Policy</span></p>
         </div>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default Newsletter;

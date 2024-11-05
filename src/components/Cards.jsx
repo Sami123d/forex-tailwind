@@ -1,33 +1,51 @@
 // src/App.js
-import React from 'react';
-
-function Card({ title, content, price }) {
-  return (
-    
-    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105">
-      <h2 className="text-xl font-semibold mb-2">{title}</h2>
-    <h1 className='text-2xl font-bold my-5 border-b-2'>{price}</h1>
-      <p className="text-gray-700">{content}</p>
-    </div>
-  );
-}
+import React from "react";
+import Button from "./Button.jsx";
+import Singlecard from "./Singlecard.jsx";
+import {cardsData} from './dummyData/dummyData.js';
 
 function Cards() {
-    return (
-        <div className=" flex flex-col items-center justify-center bg-gray-100 p-4">
-          <div className="w-full max-w-6xl gap-4 flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0 md:space-x-4">
-            <div className="flex-1">
-              <Card title="Single User" content="This is the first card." price="$150"/>
-            </div>
-            <div className="flex-1  md:scale-110">
-              <Card title="Partnership" content="This is the second card. It is elevated." />
-            </div>
-            <div className="flex-1">
-              <Card title="Group Content" content="This is the third card." />
-            </div>
-          </div>
+  return (
+    <div className="min-h-screen flex  items-center justify-center bg-gray-100 px-5 py-11">
+      <div className="w-full max-w-6xl gap-9 flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0 md:space-x-4">
+        {cardsData.map((card)=>(
+
+         
+          <Singlecard key={card.id}
+          image={card.img}
+            title={card.title}
+            send={card.desc}
+            user={card.usersAllowed}
+            storage={card.storage}
+            price={card.price}
+            isSpecial={card.title === 'Partnerships'}
+          />
+        
+        ))}
+        
+        {/* <div className="flex-1  md:scale-110">
+          <Singlecard
+            title="Partnership"
+         
+            content="This is the first card."
+            send="send up to 2GB"
+            user="1 user Allowed"
+            storage="500 GB Storage"
+            price="$150"
+          />
         </div>
-      );
+        <div className="flex-1">
+          <Singlecard  
+           title="Single User"
+           content="This is the first card."
+           send="send up to 2GB"
+           user="1 user Allowed"
+           storage="500 GB Storage"
+           price="$150"/>
+        </div> */}
+      </div>
+    </div>
+  );
 }
 
 export default Cards;

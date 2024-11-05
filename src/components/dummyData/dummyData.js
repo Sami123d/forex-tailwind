@@ -1,10 +1,11 @@
-export const cards = [
+export const cardsData = [
   {
     id: 1,
     title: "Single User",
     price: `$150`,
     storage: "500GB Storage",
     desc: "send upto 10GB",
+    usersAllowed: "1 User Allowed",
     img: "src/assets/single.png",
   },
   {
@@ -13,6 +14,7 @@ export const cards = [
     price: `$199`,
     storage: "1TB Storage",
     desc: "send upto 20GB",
+    usersAllowed: "1 User Allowed",
     img: "src/assets/double.png"
   },
   {
@@ -21,7 +23,7 @@ export const cards = [
     price: `$299`,
     storage: "5TB Storage",
     desc: "send upto 30GB",
-
+    usersAllowed: "1 User Allowed",
     img: "src/assets/triple.png",
   },
 ];
