@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const sidebarRef = useRef(null); // Reference for the sidebar
 
   const navHandler = () => {
     setNav(!nav);
@@ -19,11 +20,37 @@ const Navbar = () => {
     };
 
     // Add event listener
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Clean up event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Disable body scroll when sidebar is open
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [nav]);
+
+  // Handle clicks outside of the sidebar to close it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setNav(false); // Close the sidebar
+      }
+    };
+
+    // Add event listener for clicks
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up event listener on component unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -43,6 +70,7 @@ const Navbar = () => {
         {nav ? <IoMdClose size={22} /> : <RiMenu3Fill size={20} />}
       </div>
       <div
+        ref={sidebarRef} // Attach the ref to the sidebar
         className={`fixed h-full flex flex-col left-0 top-0 w-[60%] ease-in-out duration-500 bg-[#000300] z-20 ${
           nav ? "translate-x-0" : "translate-x-[-100%]"
         }`}
