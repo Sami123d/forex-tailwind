@@ -1,5 +1,5 @@
 import DoubleImg from '../../assets/double.png';
-import SingleImg from '../../assets/Single.png';
+import SingleImg from '../../assets/single.png';
 import TripleImg from '../../assets/triple.png';
 export const cardsData = [
   {
