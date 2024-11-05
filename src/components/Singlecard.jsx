@@ -5,7 +5,7 @@ const Singlecard = ({ title, price, storage, user, send, image, isSpecial,  }) =
   console.log(isSpecial)
   return (
     <div className={`${isSpecial ? "flex-1 md:scale-110" : "flex-1"}`}>
-      <div className={ `bg-white  p-6 rounded-lg text-center shadow-md transform transition duration-300 ${isSpecial ? "hover:shadow-2xl bg-[#eff1f5]" : "hover:shadow-2xl" }`}>
+      <div className={ `  p-6 rounded-lg text-center shadow-md transform transition duration-300 ${isSpecial ? "hover:shadow-2xl bg-[#eceef3]" : "hover:shadow-2xl" }`}>
       <div className="flex justify-center mt-[-55px]">
         <img className="w-16 h-16 object-contain" src={image} alt="" srcset="" />
       </div>

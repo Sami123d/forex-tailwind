@@ -1,3 +1,6 @@
+import DoubleImg from '../../assets/double.png';
+import SingleImg from '../../assets/Single.png';
+import TripleImg from '../../assets/triple.png';
 export const cardsData = [
   {
     id: 1,
@@ -6,7 +9,7 @@ export const cardsData = [
     storage: "500GB Storage",
     desc: "send upto 10GB",
     usersAllowed: "1 User Allowed",
-    img: "src/assets/single.png",
+    img: SingleImg,
   },
   {
     id: 2,
@@ -15,7 +18,7 @@ export const cardsData = [
     storage: "1TB Storage",
     desc: "send upto 20GB",
     usersAllowed: "1 User Allowed",
-    img: "src/assets/double.png"
+    img: DoubleImg
   },
   {
     id: 3,
@@ -24,6 +27,6 @@ export const cardsData = [
     storage: "5TB Storage",
     desc: "send upto 30GB",
     usersAllowed: "1 User Allowed",
-    img: "src/assets/triple.png",
+    img: TripleImg,
   },
 ];
