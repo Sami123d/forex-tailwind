@@ -41,13 +41,13 @@ const Navbar = () => {
 
   return (
     <div className="text-white h-24 max-w-[1240px] mx-auto px-4 flex justify-between items-center bg-black">
-      <div className="text-3xl font-bold uppercase text-[#00df9a]">forex.</div>
+      <div className="text-3xl font-bold uppercase text-[#00df9a] cursor-pointer ">forex.</div>
       <ul className="md:flex hidden">
-        <li className="p-4 hover:text-[#00df9a]">Home</li>
-        <li className="p-4 hover:text-[#00df9a]">Company</li>
-        <li className="p-4 hover:text-[#00df9a]">Resources</li>
-        <li className="p-4 hover:text-[#00df9a]">About</li>
-        <li className="p-4 hover:text-[#00df9a]">Contact</li>
+        <li className="p-4 hover:text-[#00df9a] cursor-pointer">Home</li>
+        <li className="p-4 hover:text-[#00df9a] cursor-pointer">Company</li>
+        <li className="p-4 hover:text-[#00df9a] cursor-pointer">Resources</li>
+        <li className="p-4 hover:text-[#00df9a] cursor-pointer">About</li>
+        <li className="p-4 hover:text-[#00df9a] cursor-pointer">Contact</li>
 
 
 
@@ -62,13 +62,13 @@ const Navbar = () => {
           nav ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="text-3xl mt-4 p-4 font-bold uppercase text-[#00df9a]">forex.</div>
+        <div className="text-3xl mt-4 p-4 font-bold uppercase text-[#00df9a] cursor-pointer">forex.</div>
         <ul className="uppercase ml-4 mb-2 pt-7">
-          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Home</li>
-          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Company</li>
-          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a]">Resources</li>
-          <li className="p-4 border-b  border-gray-600 hover:text-[#00df9a]">About</li>
-          <li className="p-4  border-gray-600 hover:text-[#00df9a]">Contact</li>
+          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a] cursor-pointer">Home</li>
+          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a] cursor-pointer">Company</li>
+          <li className="p-4 border-b border-gray-600 hover:text-[#00df9a] cursor-pointer">Resources</li>
+          <li className="p-4 border-b  border-gray-600 hover:text-[#00df9a] cursor-pointer">About</li>
+          <li className="p-4  border-gray-600 hover:text-[#00df9a] cursor-pointer">Contact</li>
 
         </ul>
       </div>

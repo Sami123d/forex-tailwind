@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="text-white ">
+    <div className="text-white cursor-default">
       <div className="w-full mx-auto max-w-[800px] mt-[-96px]  flex items-center h-screen flex-col content-center justify-center">
         <p className="text-[#00df9a] text-center lg:text-2xl uppercase py-1">
           growing with data analytics

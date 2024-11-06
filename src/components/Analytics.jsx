@@ -9,7 +9,7 @@ const Analytics = () => {
        
           <img className="w-[450px]  mx-auto my-6 xxl:w-[550px] " src={laptop} alt="" srcset="" />
        
-        <div className="text-black my-auto">
+        <div className="text-black my-auto  cursor-default">
        
 
           <p className="uppercase text-[#00df9a] text-sm md:text-lg font-semibold">data analytics dashboard</p>

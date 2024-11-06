@@ -5,7 +5,7 @@ const Newsletter = () => {
   return (
     <div className="w-full py-16 text-white px-4">
       <div className="max-w-[1240px] grid lg:grid-cols-3 mx-auto">
-        <div className=" lg:col-span-2 my-4">
+        <div className=" lg:col-span-2 my-4 cursor-default">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold py-2">
             Want tips and tricks to optimize your flow?
           </h1>
@@ -20,7 +20,7 @@ const Newsletter = () => {
             />
           <Button text={'Notify Me'}/>
           </div>
-          <p className="">We care about the protection of your data. Read our <span className="text-[#00d59a] underline">Privacy Policy</span></p>
+          <p className="cursor-default">We care about the protection of your data. Read our <span className="text-[#00d59a] underline">Privacy Policy</span></p>
         </div>
       </div>
     </div>
