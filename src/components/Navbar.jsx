@@ -56,6 +56,7 @@ const Navbar = () => {
       <div className="block md:hidden cursor-pointer" onClick={toggleSidebar}>
         {nav ? <IoMdClose size={22} /> : <RiMenu3Fill size={20} />}
       </div>
+      
       <div
         ref={sidebarRef}
         className={`fixed h-full flex flex-col left-0 top-0 w-[60%] overflow-y-auto bg-[#000300] z-20 transition-transform duration-500 ${
